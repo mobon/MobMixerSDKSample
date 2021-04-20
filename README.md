@@ -2,7 +2,7 @@
 
 모비믹서 SDK 를 이용하여 광고를 노출하는 방법을 제공하고 있습니다.  
 
-# Mobon Android SDK Release History
+# MobMixer Android SDK Release History
  |version|Description|
 |---|:---:|
 |1.0.0.0|first Release|
