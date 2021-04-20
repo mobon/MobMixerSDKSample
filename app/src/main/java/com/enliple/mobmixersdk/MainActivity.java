@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.mobmixer.sdk.AdBannerView;
 import com.mobmixer.sdk.BannerType;
-import com.mobmixer.sdk.callback.iMobonBannerCallback;
+import com.mobmixer.sdk.callback.iBannerCallback;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         banner_container = findViewById(R.id.banner_container);
 
         adBannerView = new AdBannerView(this, BannerType.BANNER_320x50).setBannerUnitId(UNIT_ID);
-        adBannerView.setAdListener(new iMobonBannerCallback() {
+        adBannerView.setAdListener(new iBannerCallback() {
             @Override
             public void onLoadedAdInfo(boolean result, String errorcode) {
                 if (result) {
