@@ -5,7 +5,7 @@
 # MobMixer Android SDK Release History
  |version|Description|
 |---|:---:|
-|1.0.0.0|first Release|
+|1.0.0|first Release|
 
 ## 개발환경
 - 최소 SDK Version : Android 14
@@ -32,9 +32,7 @@ allprojects {
 dependencies {
   implementation fileTree(dir: 'libs', include: ['*.jar'])
   implementation 'com.google.android.gms:play-services-ads-identifier:17.0.0'
-  implementation('io.github.mobon:mobMixerSDK:1.0.0.0') {
-        transitive = true
-    }
+  implementation 'io.github.mobon:mobMixerSDK:1.0.0' 
 }
 ```
 
