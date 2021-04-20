@@ -1,9 +1,0 @@
-R_DEF: Internal format may change without notice
-local
-string app_name
-string mobon_bacon_info
-string mobon_ending_close
-string mobon_ending_finish
-string mobon_ending_ment
-string mobon_today_msg
-string mobon_won
