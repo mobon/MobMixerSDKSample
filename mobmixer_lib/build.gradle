@@ -1,0 +1,51 @@
+apply plugin: 'com.android.library'
+
+ext {
+    PUBLISH_VERSION = '1.0.0.0'
+}
+// adb shell am broadcast -a com.mobon.sdk.action.log --es ver "x"
+
+android {
+    compileSdkVersion 29
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 29
+        compileOptions {
+            encoding "UTF-8"
+            sourceCompatibility JavaVersion.VERSION_1_7
+            targetCompatibility JavaVersion.VERSION_1_7
+        }
+
+        buildConfigField "String", "MOBON_LIB_VERSION", "\"${PUBLISH_VERSION}\""
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt')
+            proguardFile 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            debuggable true
+            jniDebuggable true
+            //  proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+}
+
+dependencies {
+//    implementation 'androidx.exifinterface:exifinterface:1.3.2'
+//    implementation 'androidx.annotation:annotation:1.1.0'
+//    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.gms:play-services-ads-identifier:17.0.0'
+//    implementation 'com.google.code.findbugs:jsr305:3.0.2'
+//    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+}
