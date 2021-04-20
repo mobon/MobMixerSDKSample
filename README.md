@@ -63,10 +63,10 @@ android:usesCleartextTraffic="true"
 
 LinearLayout banner_container = findViewById(R.id.banner_container);
 // 각 광고 뷰 당 발급받은 UNIT_ID 값을 필수로 넣어주어야 합니다.
-RectBannerView rv = new RectBannerView(this,BannerType.BANNER_320x50).setBannerUnitId(TEST_UNIT_ID);
+AdBannerView banner = new AdBannerView(this,BannerType.BANNER_320x50).setBannerUnitId(TEST_UNIT_ID);
 
 // 배너뷰의 리스너를 등록합니다.
-rv.setAdListener(new iMobonBannerCallback() {
+banner.setAdListener(new iBannerCallback() {
             @Override
             public void onLoadedAdInfo(boolean result, String errorcode) {
                 if (result) {
