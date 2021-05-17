@@ -5,6 +5,7 @@
 # MobMixer Android SDK Release History
  |version|Description|
 |---|:---:|
+|1.0.2|bug fix|
 |1.0.1|first Release|
 
 ## 개발환경
@@ -32,7 +33,7 @@ allprojects {
 dependencies {
   implementation fileTree(dir: 'libs', include: ['*.jar'])
   implementation 'com.google.android.gms:play-services-ads-identifier:17.0.0'
-  implementation 'io.github.mobon:mobMixerSDK:1.0.1' 
+  implementation 'io.github.mobon:mobMixerSDK:1.0.2' 
 }
 ```
 
