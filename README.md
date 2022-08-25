@@ -14,7 +14,7 @@
 - Build Tool : Android Studio 
 - androidX 권장
  
-## 1. Mobon SDK 기본설정
+## 1. MobMixer SDK 기본설정
 
 - project build.gradle 에 mavenCentral() 을 추가합니다.
 
@@ -28,7 +28,7 @@ allprojects {
 }
 ```
 
-- app build.gradle 에 com.google.android.gms 와 mobonSDK 라이브러리를 추가합니다.
+- app build.gradle 에 com.google.android.gms 와 MobMixer 라이브러리를 추가합니다.
 ```XML
 dependencies {
   implementation fileTree(dir: 'libs', include: ['*.jar'])
